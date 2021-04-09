@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '7fea)agzt#$+opj(@%htikxso#%(b-6os8n56a9uw*o9&yjm75'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['www.nickwalter.info', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['anywherehere.pythonanywhere.com']
 
 
 # Application definition
@@ -125,7 +125,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-try:
-    from .local_settings import *
-except ImportError:
-    print("Looks like no local file. You must be on production")
+#try:
+#    from .local_settings import *
+#except ImportError:
+#    print("Looks like no local file. You must be on production")
